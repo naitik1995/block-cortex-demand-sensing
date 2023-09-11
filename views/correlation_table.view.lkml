@@ -33,6 +33,6 @@ view: correlation_table_pdt {
         EXTRACT(YEAR FROM
         Sales.date) >= (SELECT DISTINCT EXTRACT(YEAR FROM MaxDate) - 3 FROM Sales))
         ;;
-      interval_trigger: "730 hour"
+
     }
 }
